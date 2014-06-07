@@ -1,0 +1,50 @@
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lightish: #ccc;
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+$adult-1: #e1a186;
+$adult-2: #d7825f;
+$adult-3: #c9642e;
+
+$adult-4: #739ab4;
+$adult-5: #44789c;
+$adult-6: #195587;
+
+$adult-7: #71aa8f;
+$adult-8: #418e69;
+$adult-9: #19723f;
+
+$teen-1: #eb9099;
+$teen-2: #e56b78;
+$teen-3: #d94755;
+
+$teen-4: #ad9ec6;
+$teen-5: #917eb4;
+$teen-6: #745ca6;
+
+$teen-7: #a0d6d3;
+$teen-8: #7fc8c4;
+$teen-9: #65bab5;
+
+$child-1: #f4d183;
+$child-2: #f1c25f;
+$child-3: #ebb41b;
+
+$child-4: #86c4e3;
+$child-5: #5db0d9;
+$child-6: #3c9bd5;
+
+$child-7: #a3d083;
+$child-8: #84c05e;
+$child-9: #6ab21e;
+
+$brand-primary:         $adult-5;
+$brand-success:         $adult-8;
+$brand-info:            $adult-6;
+$brand-warning:         $adult-2;
+$brand-danger:          $teen-3;
+
+$font-family-sans-serif: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;

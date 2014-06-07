@@ -1,0 +1,33 @@
+.search-container {
+  display: flex;
+  margin: 15px 0;
+
+  .search {
+    color: $gray-dark;
+    background-color: white;
+    border: 1px solid $gray-lightish;
+    padding: 4px 8px 2px;
+    margin-right: 10px;
+    border-radius: 15px;
+    flex: 1 1 auto;
+    display: flex;
+
+    .glyphicon {
+      padding-top: 1px;
+      color: $gray-light;
+      font-size: 18px;
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      padding-left: 10px;
+      flex: 1 1 auto;
+
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

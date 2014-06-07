@@ -1,0 +1,17 @@
+<div class="search-container">
+  <div class="search">
+    <span class="glyphicon glyphicon-search"></span>
+    <input type="text" ng-model="searchText" placeholder="Search...">
+  </div>
+  <button type="button" class="btn btn-default" ng-click="cancelSearch()" ng-show="searchText">cancel</button>
+</div>
+<div class="books">
+  <div class="book" ng-repeat="book in books | filter:searchText track by book.id" ng-class="{in: book.in}">
+    <div class="cover" back-img="{{book.imageSrc}}"></div>
+    <div class="caption">
+      <h4>{{book.title}}</h4>
+      <h5>{{book.category}}</h5>      
+      <div class="fade-out"></div>
+    </div>
+  </div>
+</div>

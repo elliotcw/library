@@ -1,0 +1,18 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import "variables";
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+@import "books";
+@import "search";
+
+html, body, .container {
+    height: 100%;
+}
+
+body {
+    background-color: $gray-lighter;
+}

@@ -1,0 +1,60 @@
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: -5px;
+  overflow: auto;
+  height: calc(100% - 60px);
+
+  .book {
+    margin: 5px;
+    margin-bottom: 15px;
+    width: 160px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba($adult-5, 0.7);
+    }
+
+    .cover {
+      height: 235px;
+      width: 160px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .caption {
+      padding: 0 5px;
+      position: relative;
+    }
+
+    .fade-out {
+      position: absolute;
+      right: 5px;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white)
+    }
+
+    h4 {
+      white-space: nowrap;
+      overflow: hidden;
+      color: $gray-dark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h5 {
+      color: $gray;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

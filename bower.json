@@ -1,0 +1,15 @@
+{
+  "name": "library",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.1",
+    "jquery": "~1.11.0",
+    "d3": "~3.4.8",
+    "velocity": "~0.0.20",
+    "angular": "~1.2.16",
+    "requirejs": "~2.1.14",
+    "requirejs-text": "~2.0.12",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {}
+}
