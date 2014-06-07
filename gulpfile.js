@@ -8,9 +8,8 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.scss')
-        .pipe($.rubySass({
-            style: 'expanded',
-            precision: 10
+        .pipe($.sass({
+            outputStyle: 'expanded'
         }))
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('.tmp/styles'))
@@ -94,6 +93,8 @@ gulp.task('connect', function () {
 gulp.task('serve', ['connect', 'styles'], function () {
     require('opn')('http://localhost:9000');
 });
+
+gulp.task('heroku:production', ['build', 'connect', 'styles']);
 
 // inject bower components
 gulp.task('wiredep', function () {
